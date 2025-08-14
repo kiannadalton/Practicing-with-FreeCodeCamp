@@ -4,9 +4,9 @@ These are some of the labs I completed when practicing with FreeCodeCamp. Labs a
 
 To assist in viewing this repository, I have added the name of the file and the corresponding user story below.
 
-# recordCollection.js
+## recordCollection.js
 
-## Demonstrates use of: objects, nested objects, array methods, if and if/else statements
+### Demonstrates use of: objects, nested objects, array methods, if and if/else statements
 
 Build a Record Collection
 You are creating a function that aids in the maintenance of a musical album collection. The collection is organized as an object that contains multiple albums which are also objects. Each album is represented in the collection with a unique id as the property name. Within each album object, there are various properties describing information about the album. Not all albums have complete information.
