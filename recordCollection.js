@@ -35,7 +35,7 @@ function updateRecords(records, id, prop, value) {
   return records;
 }
 
-// some tests:
+// Some tests:
 updateRecords(recordCollection, 5439, "artist", "ABBA");
 updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me");
 updateRecords(recordCollection, 2548, "artist", "");
