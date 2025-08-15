@@ -6,7 +6,7 @@ To assist in viewing this repository, I have added the name of the file and the 
 
 ## emailMasker.js
 
-## Demonstrates use of: slice, repeat, indexOf, concatenation, and use of local variables
+### Demonstrates use of: slice, repeat, indexOf, concatenation, and use of local variables
 
 In this lab, you will mask the username part of an email address with asterisks. Masking is a term used to hide or replace sensitive information with asterisks or other characters.
 
