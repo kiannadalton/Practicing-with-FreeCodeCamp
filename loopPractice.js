@@ -77,3 +77,21 @@ function mutation(array) {
 console.log(mutation(["hello", "Hello"])); //true
 console.log(mutation(["Mary", "Army"])); //true
 console.log(mutation(["Tiger", "Zebra"])); //false
+
+// Split Array into a Two-Dimensional Array
+// User Stories:
+
+// Write a function named chunkArrayInGroups that takes an array as first argument and a number as second argument. The function should split the array into smaller arrays of length equal to the second argument and returns them as a two-dimensional array.
+
+// My Code:
+function chunkArrayInGroups(arr1, num1) {
+  let twoDimArray = [];
+  for (let i = 0; i < arr1.length; i) {
+    let newArray = arr1.splice(i, num1);
+    twoDimArray.push(newArray);
+  }
+  return twoDimArray;
+}
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3));
