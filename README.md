@@ -44,3 +44,8 @@ If value is an empty string, delete the given prop property from the album.
 If prop isn't tracks and value isn't an empty string, assign the value to that album's prop.
 If prop is tracks and value isn't an empty string, but the album doesn't have a tracks property, create an empty array and add value to it.
 If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.
+
+## loopPractice.js
+
+###Demonstrates use of: for loop, .split, .length, assignment operators
+This file is a collection of various labs I did using loops.
