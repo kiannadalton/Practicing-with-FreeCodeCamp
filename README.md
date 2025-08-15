@@ -47,5 +47,6 @@ If prop is tracks and value isn't an empty string, add value to the end of the a
 
 ## loopPractice.js
 
-###Demonstrates use of: for loop, .split, .length, assignment operators
+### Demonstrates use of: for loop, .split, .length, assignment operators
+
 This file is a collection of various labs I did using loops.
