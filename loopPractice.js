@@ -154,3 +154,48 @@ function lookUpProfile(name, prop) {
 }
 console.log(lookUpProfile("Kristian", "lastName"));
 console.log(lookUpProfile("Akira", "address"));
+
+// Largest Number Finder:
+// User Stories:
+// You should create a function largestOfAll that takes an array of arrays as an argument.
+// The function should return an array containing the largest number from each sub-array.
+
+// My Code:
+function largestOfAll(arr) {
+  let largestNums = [];
+  for (let i = 0; i < arr.length; i++) {
+    let indexArr = arr[i];
+    let bigNum;
+    for (let i = 0; i < indexArr.length; i++) {
+      if (bigNum != undefined) {
+        if (indexArr[i] > bigNum) {
+          bigNum = indexArr[i];
+        } else {
+          continue;
+        }
+      } else {
+        bigNum = indexArr[i];
+      }
+    }
+    largestNums.push(bigNum);
+  }
+  return largestNums;
+}
+
+console.log(
+  largestOfAll([
+    [4, 5, 1, 3],
+    [13, 27, 18, 26],
+    [32, 35, 37, 39],
+    [1000, 1001, 857, 1],
+  ])
+);
+
+console.log(
+  largestOfAll([
+    [17, 23, 25, 12],
+    [25, 7, 34, 48],
+    [4, -10, 18, 21],
+    [-72, -3, -17, -10],
+  ])
+);
