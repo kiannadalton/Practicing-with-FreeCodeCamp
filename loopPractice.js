@@ -199,3 +199,21 @@ console.log(
     [-72, -3, -17, -10],
   ])
 );
+
+// Splice Arrays:
+// User Stories:
+// Create a frankenSplice function that accepts two arrays and an index.
+// Copy each element of the first array into the second array, in order, beginning at the given index, and return the resulting array.
+// The input arrays should remain the same after the function runs.
+
+// My Code:
+function frankenSplice(arr1, arr2, index) {
+  let arr3 = [...arr2]; // creates copy of arr2
+  for (let i = 0; i < arr1.length; i++) {
+    arr3.splice(index, 0, arr1[i]);
+    index++;
+  }
+  return arr3;
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5], 1));
