@@ -6,7 +6,7 @@ To assist in viewing this repository, I have added the name of the file and the 
 
 ## emailMasker.js
 
-### Demonstrates use of: slice, repeat, indexOf, concatenation, and use of local variables
+### Demonstrates use of: .slice, .repeat, .indexOf, concatenation, and use of local variables
 
 In this lab, you will mask the username part of an email address with asterisks. Masking is a term used to hide or replace sensitive information with asterisks or other characters.
 
@@ -47,6 +47,6 @@ If prop is tracks and value isn't an empty string, add value to the end of the a
 
 ## loopPractice.js
 
-### Demonstrates use of: for loop, for...of loop, for...in loop, .split, .length, assignment operators, if/else statements, .includes, .toLowerCase, two-dimensional array, .splice, spread operator (...)
+### Demonstrates use of: for loop, for...of loop, for...in loop, .split, .length, assignment operators, if/else statements, .includes, .toLowerCase, two-dimensional array, .splice, spread operator (...), .repeat
 
 This file is a collection of various labs I did using loops.

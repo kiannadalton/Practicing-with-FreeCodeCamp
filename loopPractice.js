@@ -217,3 +217,44 @@ function frankenSplice(arr1, arr2, index) {
 }
 
 console.log(frankenSplice([1, 2, 3], [4, 5], 1));
+
+// Pyramid Builder:
+// User Stories:
+// You should have a function named pyramid that takes three arguments.
+// The first argument should be a string representing the pattern character to repeat in your pyramid.
+// The second argument should be an integer representing the number of rows in the pyramid.
+// The third argument should be a Boolean value.
+
+// My Code:
+function pyramid(str1, int, bool) {
+  let pyraString = "\n";
+  // you add 2 or subtract 2 str1 to make pyramid
+  if (bool === true) {
+    let space = " ";
+    let spaceRepeats = 0;
+    let char = str1;
+    let charIncr = int - 1;
+    for (let i = int; i > 0; i--) {
+      pyraString +=
+        space.repeat(spaceRepeats) + char.repeat(i + charIncr) + "\n";
+      spaceRepeats++;
+      charIncr--;
+    }
+    return pyraString;
+  } else if (bool === false) {
+    let space = " ";
+    let spaceRepeats = int - 1;
+    let char = str1;
+    let charIncr = 0;
+    for (let i = 1; i <= int; i++) {
+      pyraString +=
+        space.repeat(spaceRepeats) + char.repeat(i + charIncr) + "\n";
+      spaceRepeats--;
+      charIncr++;
+    }
+    return pyraString;
+  }
+}
+
+console.log(pyramid("o", 4, false));
+console.log(pyramid("p", 5, true));
