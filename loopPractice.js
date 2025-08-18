@@ -1,6 +1,5 @@
 // Longest Word Finder
 // User Stories:
-
 // You should create a function named findLongestWordLength that takes a string as an argument.
 // The function should return the length of the longest word in the string.
 
@@ -80,7 +79,6 @@ console.log(mutation(["Tiger", "Zebra"])); //false
 
 // Split Array into a Two-Dimensional Array
 // User Stories:
-
 // Write a function named chunkArrayInGroups that takes an array as first argument and a number as second argument. The function should split the array into smaller arrays of length equal to the second argument and returns them as a two-dimensional array.
 
 // My Code:
@@ -95,3 +93,64 @@ function chunkArrayInGroups(arr1, num1) {
 
 console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
 console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3));
+
+// Build a Profile Lookup:
+// User Stories:
+// You should create a function named lookUpProfile that takes a name and a property as arguments.
+// You should retrieve contact information from the provided contacts array.
+// If the function receives a contact name and the property exists on the related contact, then the property's value should be returned.
+// If the name passed to the function does not match any contacts in the contacts array, then the function should return "No such contact".
+// If the property does not exist on a found contact, then the function should return "No such property".
+// conatcts object provided by FreeCodeCamp
+
+let contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+// My Code:
+
+function lookUpProfile(name, prop) {
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].firstName == name) {
+      if (contacts[i][prop] == undefined) {
+        return "No such property";
+      } else {
+        for (const key in contacts[i]) {
+          if (key == prop) {
+            return contacts[i][prop];
+          } else {
+            continue;
+          }
+        }
+      }
+    } else {
+      continue;
+    }
+  }
+  return "No such contact";
+}
+console.log(lookUpProfile("Kristian", "lastName"));
+console.log(lookUpProfile("Akira", "address"));
