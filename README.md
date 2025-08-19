@@ -80,7 +80,7 @@ You should have a function named studentMsg that takes an array of scores and a 
 "Class average: average-goes-here. Your grade: grade-goes-here. You passed the course.", if the student passed the course.
 "Class average: average-goes-here. Your grade: grade-goes-here. You failed the course.", if the student failed the course.
 
-## inventoryManagement
+## inventoryManagement.js
 
 ### Demonstrates use of: if/else statements, for loops, .toLowerCase(), .splice, template literals, concatenation
 
