@@ -106,3 +106,25 @@ The removeProduct function should subtract the passed quantity from the correspo
 If the quantity after the subtraction is zero, removeProduct should remove the product object from the inventory. If the quantity in the inventory is not enough to perform the subtraction, the removeProduct function should log the string Not enough <product-name> available, remaining pieces: <product-quantity> to the console.
 
 If the product to remove is not present in the inventory, the removeProduct function should log <product-name> not found to the console.
+
+## bookOrganizer.js
+
+### Demonstrates use of: if/else statements, .filter, .sort
+
+User Stories:
+
+You should have an array of objects named books where each object in the array should have a string title, another string authorName, and a number releaseYear.
+
+Your books array should have a minimum of three objects.
+
+You should have a callback function named sortByYear that accepts two books as parameter for sorting the array.
+
+The sortByYear function should return -1 if the releaseYear of the first book is smaller than that of the second book.
+
+The sortByYear function should return 1 if the releaseYear of the first book is bigger than that of the second book.
+
+The sortByYear function should return 0 if both releaseYear values are equal.
+
+You should filter out books written after a certain year such as 1950 from the books array and save the filtered array in a new array named filteredBooks.
+
+You should sort the books in the filteredBooks array according to their releaseYear in ascending order. You learned in a prior lecture that the sort() method will sort the array in place. This means the filteredBooks array will be mutated.
