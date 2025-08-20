@@ -258,3 +258,25 @@ function pyramid(str1, int, bool) {
 
 console.log(pyramid("o", 4, false));
 console.log(pyramid("p", 5, true));
+
+// Password Generator App:
+// User Stories:
+
+// You should create a function called generatePassword that takes a parameter, indicating the length of generated password. You can name the parameter whatever you like.
+// Your function should return a string which represents a randomly generated password. You should use the following string and different Math methods to help you return a new string with random characters in it: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*().
+
+// My Code:
+function generatePassword(passLength) {
+  let genPass = "";
+  for (let i = 0; i < passLength; i++) {
+    let char =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+    let randomNum = Math.floor(Math.random() * 72);
+    let randomChar = char[randomNum];
+    genPass += randomChar;
+  }
+  return genPass;
+}
+
+let password = generatePassword(7);
+console.log("Generated password: " + password);
