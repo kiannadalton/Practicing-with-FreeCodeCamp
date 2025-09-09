@@ -128,3 +128,10 @@ The sortByYear function should return 0 if both releaseYear values are equal.
 You should filter out books written after a certain year such as 1950 from the books array and save the filtered array in a new array named filteredBooks.
 
 You should sort the books in the filteredBooks array according to their releaseYear in ascending order. You learned in a prior lecture that the sort() method will sort the array in place. This means the filteredBooks array will be mutated.
+
+## Instrument Workshop
+
+### Demonstrates use of: if/else statements, .filter, .map, addEventListener, setAttribute, createElement, querySelector, appendChild, replaceChildren, ..., array, objects, DOM
+
+User Story:
+You have been provided with a page containing several instrument cards. You are going to add functionality to this static page so you'll be able to filter the instruments depending on their family.
